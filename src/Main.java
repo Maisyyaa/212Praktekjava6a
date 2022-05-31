@@ -34,5 +34,16 @@ public class Main {
         } else {
             System.err.println("Gagal Login");
         }
+
+
+        Pengguna gantiPassword = new Pengguna();
+        gantiPassword.setUsername("user2");
+        gantiPassword.setPassword("inipasswordbaru");
+
+        if(gantiPassword.updatePassword("user2")) {
+            System.out.println("Update Password Berhasil");
+        } else {
+            System.err.println("Gagal Update Password");
+        }
     }
 }
